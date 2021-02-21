@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielytuk/latest-instapost.git"
+  },
   "keywords": ["latest-instagram-post", "instagram"],
   "author": "danielytuk",
   "license": "ISC",
