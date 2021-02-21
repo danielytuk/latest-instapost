@@ -5,7 +5,9 @@ const instagram = async (username) => {
     const options = { method: 'GET', url: `https://www.instagram.com/${username}/?__a=1` };
     
 	try {
-		const data = await axios(options).data;
+		const fetch = await axios(options);
+		const data = fetch.data;
+		
 		const user = data.graphql.user;
 		const media = user.edge_owner_to_timeline_media.edges;
 		if(!media) return console.error("No media found on that profile.");
