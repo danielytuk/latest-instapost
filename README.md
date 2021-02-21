@@ -1,4 +1,4 @@
-![npm](https://img.shields.io/npm/dt/latest-instapost) <a href='http://dytuk.me/discord' target='_blank'>![alt Discord](https://img.shields.io/discord/659873886271438848?color=7289da&logo=discord&logoColor=white)</a> <a href='https://dytuk.me/bmac' target='_blank'>![alt support](https://img.shields.io/badge/support-blue)</a>
+<a href='http://dytuk.me/discord' target='_blank'>![alt Discord](https://img.shields.io/discord/659873886271438848?color=7289da&logo=discord&logoColor=white)</a> <a href='https://dytuk.me/bmac' target='_blank'>![alt support](https://img.shields.io/badge/donate-blue)</a>
 
 # Latest Instagram Post
 Fetch the latest post from any Instagram account and receive limited data.
@@ -17,7 +17,7 @@ module.exports = async () => {
 ```
 
 # Output
-```json
+```
 {
     fullName: 'Daniel',
     username: 'danielytuk',
