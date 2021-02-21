@@ -1,6 +1,6 @@
 {
   "name": "latest-instapost",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "fetches latest instagram post.",
   "main": "index.js",
   "repository": {
