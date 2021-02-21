@@ -1,11 +1,14 @@
 const axios = require('axios');
 
 const instagram = async(username) => {
+	
+	if(!username) throw "Username is undefined.";
+	
     const options = {
         method: 'GET',
         url: `https://www.instagram.com/${username}/?__a=1`
     };
-    const { data } = await axios({ options });
+    const { data } = await axios(options);
     if (!data) throw 'Something went wrong';
     const user = data.graphql.user;
     const media = user.edge_owner_to_timeline_media.edges;
@@ -32,4 +35,4 @@ const instagram = async(username) => {
     }
 }
 
-module.exports.instagram = instagram;
+module.exports = instagram;
