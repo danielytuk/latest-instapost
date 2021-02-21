@@ -1,9 +1,7 @@
 const axios = require('axios');
-
-const instagram = async(username) => {
+const instagram = async (username) => {
 	
 	if(!username) throw "Username is undefined.";
-	
     const options = { method: 'GET', url: `https://www.instagram.com/${username}/?__a=1` };
     
 	try {
