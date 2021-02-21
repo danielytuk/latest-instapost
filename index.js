@@ -1,16 +1,16 @@
 const axios = require('axios');
 const instagram = async (username) => {
 	
-	if(!username) throw "Username is undefined.";
+	if(!username) return console.error("Username is undefined.");
     const options = { method: 'GET', url: `https://www.instagram.com/${username}/?__a=1` };
     
 	try {
-		const { data } = await axios(options);
+		const data = await axios(options).data;
 		const user = data.graphql.user;
 		const media = user.edge_owner_to_timeline_media.edges;
-		if(!media) throw "No media found on that profile."
+		if(!media) return console.error("No media found on that profile.");
 	} catch(error) {
-		throw "Something went wrong..."
+		return console.error("Something went wrong...")
 	}
 
     return {
