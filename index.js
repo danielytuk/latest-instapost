@@ -30,7 +30,7 @@ const instagram = async(username) => {
 			allPosts: media
         }
     } catch (error) {
-        return console.error("Something went wrong...")
+        return console.log(error);
     }
 }
 
