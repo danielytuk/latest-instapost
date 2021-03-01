@@ -4,8 +4,8 @@ const instagram = async(username) => {
 
     if (!username) return console.error("Username is undefined.");
     const options = {
-        method: 'GET',
-        url: `https://www.instagram.com/${username}/?__a=1`
+        url: `https://www.instagram.com/${username}/?__a=1`,
+		method: 'get'
     };
 	
 	let data;
@@ -14,7 +14,7 @@ const instagram = async(username) => {
 		const fetch = await axios(options);
 		data = fetch.data;
 	} catch(err) {
-		return console.error('--- Something went wrong ---', err);
+		return console.log('Account not found.');
 	}
 	
 	const user = data.graphql.user;
