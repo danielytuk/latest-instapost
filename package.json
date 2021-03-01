@@ -1,13 +1,16 @@
 {
   "name": "latest-instapost",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "fetches latest instagram post.",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/danielytuk/latest-instapost.git"
   },
-  "keywords": ["latest-instagram-post", "instagram"],
+  "keywords": [
+    "latest-instagram-post",
+    "instagram"
+  ],
   "author": "danielytuk",
   "license": "ISC",
   "dependencies": {
